@@ -80,6 +80,5 @@
 
 ## Soon to be added
 
-### Authentication
-
-- OIDC Provider
+- OIDC Provider : Authentication
+- Environment Variables Management : Configuration
