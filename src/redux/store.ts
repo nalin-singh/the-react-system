@@ -10,7 +10,9 @@ import { generalReducer } from "./features/generalSlice";
 export const store = configureStore({
   reducer: { general: generalReducer },
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware({ serializableCheck: false }).concat(logger),
+    import.meta.env.PROD
+      ? getDefaultMiddleware()
+      : getDefaultMiddleware({ serializableCheck: false }).concat(logger),
 });
 
 export type TRootState = ReturnType<typeof store.getState>;
