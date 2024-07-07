@@ -11,7 +11,7 @@ if [ -n "$stagedFiles" ]; then
     for file in $stagedFiles; do
         if [[ "$file" == *.js || "$file" == *.jsx || "$file" == *.ts || "$file" == *.tsx ]]; then
             codeFiles+=("$file")
-        elif [[ "$file" == *.json || "$file" == *.md ]]; then
+        elif [[ "$file" == *.json || "$file" == *.md || "$file" == *.cjs || "$file" == *.yaml || "$file" == *.yml ]]; then
             miscellaneousFiles+=("$file")
         fi
     done
@@ -27,7 +27,7 @@ if [ -n "$codeFiles" ]; then
     echo
 fi
 if [ -n "$miscellaneousFiles" ]; then
-    echo "Miscellaneous files (.json, .md):"
+    echo "Miscellaneous files (.json, .md, .cjs, .yaml, .yml):"
     printf '%s\n' "${miscellaneousFiles[@]}"
     pnpm format "${miscellaneousFiles[@]}"
     git add "${miscellaneousFiles[@]}"
