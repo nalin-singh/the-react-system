@@ -70,6 +70,7 @@
 
 - [Shadcn UI](https://shadcn.com/docs/ui) : Shadcn UI is a collection of accessible components for React.js, Vue.js, and Svelte.
   It's built on top of [Radix Primitives](https://www.radix-ui.com/primitives) and Tailwind CSS.
+  The way the Shadcn CLI (`pnpm dlx shadcn-ui@latest add <component-name>`) installs the components is governed by the `components.json` file.
 - [Tailwind CSS](https://tailwindcss.com/docs/guides/vite) : Tailwind CSS is a utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
 - [Lucide Icons](https://lucide.dev/) : Lucide is a set of icons designed by the community to be open source and accessible.
 
