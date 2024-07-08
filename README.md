@@ -46,6 +46,11 @@
 - [Vite](https://vitejs.dev/) : Vite is a next-generation frontend tool that is fast, lightweight, and supports all major frameworks. It uses the `Typescript + SWC` configuration
 - [Vitest](https://vitest.dev/) : Vitest is a Vite-native testing framework designed for speed and efficiency.
 - [PNPM](https://pnpm.io/) : PNPM is a fast, disk space efficient package manager, improved upon the `npm` CLI by focusing on fast performance and efficiency.
+  | Metric | NPM | YARN | PNPM |
+  | ------------------------------ | ------ | ------ | ----- |
+  | Installation time (cold cache) | 67.4s | 47.6s | 32.3s |
+  | Installation time (warm cache) | 9.1s | 4.9s | 4.4s |
+  | Disk space used | 237 MB | 175 MB | 39 MB |
 
 ### State Management
 
