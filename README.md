@@ -44,13 +44,18 @@
 ### Core
 
 - [Vite](https://vitejs.dev/) : Vite is a next-generation frontend tool that is fast, lightweight, and supports all major frameworks. It uses the `Typescript + SWC` configuration
-- [Vitest](https://vitest.dev/) : Vitest is a Vite-native testing framework designed for speed and efficiency.
+- [Vitest](https://vitest.dev/) : Vitest is a Vite-native testing framework designed for speed and efficiency. A comparison POV between [Jest](https://jestjs.io) and Vitest is available [here](https://www.reddit.com/r/reactjs/comments/10zyse3/comment/jrr44mc/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button).
 - [PNPM](https://pnpm.io/) : PNPM is a fast, disk space efficient package manager, improved upon the `npm` CLI by focusing on fast performance and efficiency.
   | Metric | NPM | YARN | PNPM |
   | ------------------------------ | ------ | ------ | ----- |
   | Installation time (cold cache) | 67.4s | 47.6s | 32.3s |
   | Installation time (warm cache) | 9.1s | 4.9s | 4.4s |
   | Disk space used | 237 MB | 175 MB | 39 MB |
+
+### Routing
+
+- [React Router](https://reactrouter.com/en/main/start/concepts) : React Router is a complete routing library for React.js.
+  > It isn't just about matching a url to a function or component: it's about building a full user interface that maps to the URL, so it might have more concepts in it than you're used to.
 
 ### State Management
 
@@ -84,7 +89,12 @@
 
 - [SheetJS : XLSX](https://docs.sheetjs.com/docs/getting-started/installation/frameworks) : SheetJS is a JavaScript library for reading and writing spreadsheet files. The installation is a .tgz file, currently setup in the vendor folder and referenced in the package.json file via `"xlsx": "file:vendor/xlsx-0.20.2.tgz"`.
 
-## Soon to be added
+## Packages soon to be added
 
 - OIDC Provider : Authentication
 - Environment Variables Management : Configuration
+
+## Packages that aren't added, but are good options to consider if you have a requirement for them
+
+- [Faker JS](https://fakerjs.dev/) : Faker is a simple, portable, dependency-free, and data-centric utility for generating fake data.
+- [React Query](https://react-query.tanstack.com/) : React Query is a powerful data fetching and caching library for React, featuring a simple and flexible API, optimized for the most common use cases.
