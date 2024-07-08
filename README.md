@@ -45,6 +45,7 @@
 
 - [Vite](https://vitejs.dev/) : Vite is a next-generation frontend tool that is fast, lightweight, and supports all major frameworks. It uses the `Typescript + SWC` configuration
 - [Vitest](https://vitest.dev/) : Vitest is a Vite-native testing framework designed for speed and efficiency. A comparison POV between [Jest](https://jestjs.io) and Vitest is available [here](https://www.reddit.com/r/reactjs/comments/10zyse3/comment/jrr44mc/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button).
+  Vitest has a User Interface that can be used to run the tests and see the results in a nice format, more details can be found [here](https://vitest.dev/guide/ui.html).
 - [PNPM](https://pnpm.io/) : PNPM is a fast, disk space efficient package manager, improved upon the `npm` CLI by focusing on fast performance and efficiency.
   | Metric | NPM | YARN | PNPM |
   | ------------------------------ | ------ | ------ | ----- |
